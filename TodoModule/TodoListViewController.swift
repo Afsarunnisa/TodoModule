@@ -13,7 +13,6 @@ class TodoListViewController: UIViewController,UITableViewDataSource,UITableView
     @IBOutlet weak var todoListTableview: UITableView!
     var isUpdating : Bool = false
     
-    
     let arrayList : NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {

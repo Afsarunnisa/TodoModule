@@ -7,3 +7,24 @@
 //
 
 import Foundation
+import UIKit
+
+public class TodoFramework {
+    
+    public static func performSegueTodoModule(caller: UIViewController) {
+        let podBundle = Bundle(for: TodoFramework.self)
+        
+        let bundleURL = podBundle.url(forResource: "TodoModule", withExtension: "bundle")
+        let bundle = Bundle(url: bundleURL!)!
+        let storyboard = UIStoryboard(name: "TodoModule", bundle: bundle)
+        let vc = storyboard.instantiateInitialViewController()!
+        caller.present(vc, animated: true, completion: nil)
+    }
+}
+
+//var bundle:Bundle {
+//    let podBundle = Bundle(for: TodoFramework.self)
+//    
+//    let bundleURL = podBundle.url(forResource: "TodoModule", withExtension: "bundle")
+//    return Bundle(url: bundleURL!)!
+//}

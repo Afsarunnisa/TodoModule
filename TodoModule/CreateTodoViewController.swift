@@ -12,7 +12,6 @@ import UIKit
 class CreateTodoViewController: UIViewController {
     
     
-    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextView!
     var updateTodo : Bool = false
