@@ -10,7 +10,7 @@
 		F9F6CAE31E02CE6D00A7DA90 /* TodoModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F6CAE11E02CE6D00A7DA90 /* TodoModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9F6CAEA1E02CEDE00A7DA90 /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6CAE91E02CEDE00A7DA90 /* CreateTodoViewController.swift */; };
 		F9F6CAED1E02CEEC00A7DA90 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6CAEB1E02CEEC00A7DA90 /* TodoListViewController.swift */; };
-		F9F6CAEE1E02CEEC00A7DA90 /* TodoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F6CAEC1E02CEEC00A7DA90 /* TodoMain.storyboard */; };
+		F9F6CAEE1E02CEEC00A7DA90 /* TodoModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F6CAEC1E02CEEC00A7DA90 /* TodoModule.storyboard */; };
 		F9F6CAF01E02CEF900A7DA90 /* TodoUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6CAEF1E02CEF900A7DA90 /* TodoUtilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +20,7 @@
 		F9F6CAE21E02CE6D00A7DA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9F6CAE91E02CEDE00A7DA90 /* CreateTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTodoViewController.swift; sourceTree = "<group>"; };
 		F9F6CAEB1E02CEEC00A7DA90 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
-		F9F6CAEC1E02CEEC00A7DA90 /* TodoMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoMain.storyboard; sourceTree = "<group>"; };
+		F9F6CAEC1E02CEEC00A7DA90 /* TodoModule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoModule.storyboard; sourceTree = "<group>"; };
 		F9F6CAEF1E02CEF900A7DA90 /* TodoUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				F9F6CAEB1E02CEEC00A7DA90 /* TodoListViewController.swift */,
-				F9F6CAEC1E02CEEC00A7DA90 /* TodoMain.storyboard */,
+				F9F6CAEC1E02CEEC00A7DA90 /* TodoModule.storyboard */,
 				F9F6CAE91E02CEDE00A7DA90 /* CreateTodoViewController.swift */,
 				F9F6CAE11E02CE6D00A7DA90 /* TodoModule.h */,
 				F9F6CAEF1E02CEF900A7DA90 /* TodoUtilities.swift */,
@@ -134,7 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F6CAEE1E02CEEC00A7DA90 /* TodoMain.storyboard in Resources */,
+				F9F6CAEE1E02CEEC00A7DA90 /* TodoModule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
