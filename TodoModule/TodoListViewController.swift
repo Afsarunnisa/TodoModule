@@ -8,18 +8,27 @@
 
 import UIKit
 
-class TodoListViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+public class TodoListViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
     @IBOutlet weak var todoListTableview: UITableView!
     var isUpdating : Bool = false
     
     let arrayList : NSMutableArray = NSMutableArray()
     
-    override func viewDidLoad() {
+    @IBOutlet weak var menuButton:UIBarButtonItem!
+    
+    //    public var menuView : AnyObject!
+    
+    
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "Todos list"
         
+        
+        
+        
         arrayList.add("test")
         arrayList.add("test")
         arrayList.add("test")
@@ -28,19 +37,35 @@ class TodoListViewController: UIViewController,UITableViewDataSource,UITableView
         arrayList.add("test")
         
     }
-
-    override func didReceiveMemoryWarning() {
+    
+    
+    public func menuAction(imgName: String, menuView : AnyObject, completionHandler: @escaping (UIBarButtonItem?, NSError?) -> ()) {
+        
+        print("menuView \(menuView)")
+        
+        
+        if menuView != nil {
+            menuButton.target = menuView
+            self.view.addGestureRecognizer(menuView.panGestureRecognizer)
+        }
+        
+        completionHandler(menuButton, nil)
+    }
+    
+    
+    
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayList.count
     }
-
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Instantiate a cell
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
@@ -51,16 +76,16 @@ class TodoListViewController: UIViewController,UITableViewDataSource,UITableView
         // Returning the cell
         return cell
     }
-
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-   
+        
         isUpdating = true
         self.performSegue(withIdentifier: "listToDetails", sender: self)
     }
     
-
+    
     
     @IBAction func addTodo(_ sender: Any) {
         
@@ -69,7 +94,7 @@ class TodoListViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "listToDetails" {
             let targetController : CreateTodoViewController  = segue.destination as! CreateTodoViewController

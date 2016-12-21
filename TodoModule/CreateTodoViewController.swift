@@ -43,9 +43,9 @@ class CreateTodoViewController: UIViewController {
             
             let alert = TodoUtilities.alertView("Alert", alertMsg: "Please enter title", actionTitle: "Ok")
             self.present(alert, animated: true, completion: nil)
-
+            
         }else if (descriptionTextField.text == ""){
-           
+            
             
             let alert = TodoUtilities.alertView("Alert", alertMsg: "Please enter description", actionTitle: "Ok")
             self.present(alert, animated: true, completion: nil)
@@ -60,11 +60,11 @@ class CreateTodoViewController: UIViewController {
             
             titleTextField.text = ""
             descriptionTextField.text = ""
-
+            
             let alert = TodoUtilities.alertView("Alert", alertMsg: "To do added", actionTitle: "Ok")
             self.present(alert, animated: true, completion: nil)
             
-        
+            
         }
         
     }
