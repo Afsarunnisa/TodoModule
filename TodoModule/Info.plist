@@ -24,5 +24,7 @@
 	<string></string>
 	<key>StoryboardName</key>
 	<string>TodoModule</string>
+	<key>Testing</key>
+	<string>Yes</string>
 </dict>
 </plist>
