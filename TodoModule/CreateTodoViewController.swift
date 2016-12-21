@@ -63,8 +63,6 @@ class CreateTodoViewController: UIViewController {
             
             let alert = TodoUtilities.alertView("Alert", alertMsg: "To do added", actionTitle: "Ok")
             self.present(alert, animated: true, completion: nil)
-            
-            
         }
         
     }

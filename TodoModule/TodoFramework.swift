@@ -20,10 +20,3 @@ public class TodoFramework {
   
     }
 }
-
-//var bundle:Bundle {
-//    let podBundle = Bundle(for: TodoFramework.self)
-//    
-//    let bundleURL = podBundle.url(forResource: "TodoModule", withExtension: "bundle")
-//    return Bundle(url: bundleURL!)!
-//}

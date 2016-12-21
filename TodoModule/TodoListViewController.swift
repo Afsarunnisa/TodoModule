@@ -19,15 +19,10 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
     
     //    public var menuView : AnyObject!
     
-    
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "Todos list"
-        
-        
-        
         
         arrayList.add("test")
         arrayList.add("test")
@@ -42,7 +37,6 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
     public func menuAction(imgName: String, menuView : AnyObject, completionHandler: @escaping (UIBarButtonItem?, NSError?) -> ()) {
         
         print("menuView \(menuView)")
-        
         
 //        if menuView != nil {
             menuButton.target = menuView
