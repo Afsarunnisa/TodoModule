@@ -44,10 +44,10 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
         print("menuView \(menuView)")
         
         
-        if menuView != nil {
+//        if menuView != nil {
             menuButton.target = menuView
             self.view.addGestureRecognizer(menuView.panGestureRecognizer)
-        }
+//        }
         
         completionHandler(menuButton, nil)
     }
