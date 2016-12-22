@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F9625C9A1E04095900F51905 /* TodoFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9625C991E04095900F51905 /* TodoFramework.swift */; };
-		F99F23001E0AADB1006C1303 /* mod.todo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F99F22FF1E0AADB1006C1303 /* mod.todo.plist */; };
+		F99F23001E0AADB1006C1303 /* mod.TodoModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = F99F22FF1E0AADB1006C1303 /* mod.TodoModule.plist */; };
 		F9F6CAE31E02CE6D00A7DA90 /* TodoModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F6CAE11E02CE6D00A7DA90 /* TodoModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9F6CAEA1E02CEDE00A7DA90 /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6CAE91E02CEDE00A7DA90 /* CreateTodoViewController.swift */; };
 		F9F6CAED1E02CEEC00A7DA90 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6CAEB1E02CEEC00A7DA90 /* TodoListViewController.swift */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		F9625C991E04095900F51905 /* TodoFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoFramework.swift; sourceTree = "<group>"; };
-		F99F22FF1E0AADB1006C1303 /* mod.todo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mod.todo.plist; sourceTree = "<group>"; };
+		F99F22FF1E0AADB1006C1303 /* mod.TodoModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mod.TodoModule.plist; sourceTree = "<group>"; };
 		F9F6CADE1E02CE6D00A7DA90 /* TodoModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TodoModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F6CAE11E02CE6D00A7DA90 /* TodoModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoModule.h; sourceTree = "<group>"; };
 		F9F6CAE21E02CE6D00A7DA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				F9F6CAEF1E02CEF900A7DA90 /* TodoUtilities.swift */,
 				F9625C991E04095900F51905 /* TodoFramework.swift */,
 				F9F6CAE21E02CE6D00A7DA90 /* Info.plist */,
-				F99F22FF1E0AADB1006C1303 /* mod.todo.plist */,
+				F99F22FF1E0AADB1006C1303 /* mod.TodoModule.plist */,
 			);
 			path = TodoModule;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99F23001E0AADB1006C1303 /* mod.todo.plist in Resources */,
+				F99F23001E0AADB1006C1303 /* mod.TodoModule.plist in Resources */,
 				F9F6CAEE1E02CEEC00A7DA90 /* TodoModule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
