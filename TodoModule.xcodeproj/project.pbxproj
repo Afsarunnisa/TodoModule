@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F91E369B1E0BEC57002897A7 /* TodoUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E369A1E0BEC57002897A7 /* TodoUtilities.swift */; };
 		F99F23001E0AADB1006C1303 /* mod.TodoModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = F99F22FF1E0AADB1006C1303 /* mod.TodoModule.plist */; };
 		F9F6CAE31E02CE6D00A7DA90 /* TodoModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F6CAE11E02CE6D00A7DA90 /* TodoModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9F6CAEA1E02CEDE00A7DA90 /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F6CAE91E02CEDE00A7DA90 /* CreateTodoViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F91E369A1E0BEC57002897A7 /* TodoUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoUtilities.swift; sourceTree = "<group>"; };
 		F99F22FF1E0AADB1006C1303 /* mod.TodoModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mod.TodoModule.plist; sourceTree = "<group>"; };
 		F9F6CADE1E02CE6D00A7DA90 /* TodoModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TodoModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F6CAE11E02CE6D00A7DA90 /* TodoModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoModule.h; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				F9F6CAEB1E02CEEC00A7DA90 /* TodoListViewController.swift */,
 				F9F6CAEC1E02CEEC00A7DA90 /* TodoModule.storyboard */,
 				F9F6CAE91E02CEDE00A7DA90 /* CreateTodoViewController.swift */,
+				F91E369A1E0BEC57002897A7 /* TodoUtilities.swift */,
 				F9F6CAE11E02CE6D00A7DA90 /* TodoModule.h */,
 				F9F6CAE21E02CE6D00A7DA90 /* Info.plist */,
 				F99F22FF1E0AADB1006C1303 /* mod.TodoModule.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91E369B1E0BEC57002897A7 /* TodoUtilities.swift in Sources */,
 				F9F6CAED1E02CEEC00A7DA90 /* TodoListViewController.swift in Sources */,
 				F9F6CAEA1E02CEDE00A7DA90 /* CreateTodoViewController.swift in Sources */,
 			);
