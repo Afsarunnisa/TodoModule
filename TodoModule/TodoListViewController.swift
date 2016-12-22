@@ -17,7 +17,6 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
     
     @IBOutlet weak var menuButton:UIBarButtonItem!
     
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,7 +28,6 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
         arrayList.add("test")
         arrayList.add("test")
         arrayList.add("test")
-        
     }
     
     
@@ -42,7 +40,6 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
         
         completionHandler(menuButton, nil)
     }
-    
     
     
     override public func didReceiveMemoryWarning() {
@@ -82,7 +79,6 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
         isUpdating = false
         self.performSegue(withIdentifier: "listToDetails", sender: self)
     }
-    
     
     override public func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
