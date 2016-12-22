@@ -40,6 +40,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WTr-SL-qkm">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="gC2-kD-S39"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PZd-PL-SOC">
                             <connections>
                                 <action selector="addTodo:" destination="BYZ-38-t0r" id="iCR-YB-d6A"/>
@@ -47,6 +48,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="menuButton" destination="gC2-kD-S39" id="OMc-6d-Ks8"/>
                         <outlet property="todoListTableview" destination="39H-9c-Qee" id="EO6-lM-Wtq"/>
                         <segue destination="Ijf-OT-spn" kind="show" identifier="listToDetails" id="mkT-qP-L1c"/>
                     </connections>
