@@ -18,25 +18,7 @@ public class TodoUtilities {
         return alert
     }
     
-    
-    public class func storyboardName() -> String{
-        return "TodoModule"
-    }
-    
-    
-    public class func className() -> String{
-        return "TodoListViewController"
-    }
-    
-    public class func initialViewController() -> UIViewController{
-        return TodoListViewController()
-        
-    }
-    
     public class func loadBundle() -> Bundle{
         return Bundle(for: self)
     }
-    
-    
-    
 }

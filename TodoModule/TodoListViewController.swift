@@ -17,7 +17,6 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
     
     @IBOutlet weak var menuButton:UIBarButtonItem!
     
-    //    public var menuView : AnyObject!
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +35,10 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
     
     public func menuAction(imgName: String, menuView : AnyObject, completionHandler: @escaping (UIBarButtonItem?, NSError?) -> ()) {
         
-        print("menuView \(menuView)")
-        
-//        if menuView != nil {
+        if menuView != nil {
             menuButton.target = menuView
             self.view.addGestureRecognizer(menuView.panGestureRecognizer)
-//        }
+        }
         
         completionHandler(menuButton, nil)
     }
@@ -82,7 +79,6 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
     
     
     @IBAction func addTodo(_ sender: Any) {
-        
         isUpdating = false
         self.performSegue(withIdentifier: "listToDetails", sender: self)
     }
