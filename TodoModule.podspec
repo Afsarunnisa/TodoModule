@@ -8,7 +8,7 @@ s.summary = "TodoModule "
 s.requires_arc = true
 
 # 2
-s.version = "0.2.6"
+s.version = "0.2.7"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }

@@ -35,10 +35,10 @@ public class TodoListViewController: UIViewController,UITableViewDataSource,UITa
     
     public func menuAction(imgName: String, menuView : AnyObject, completionHandler: @escaping (UIBarButtonItem?, NSError?) -> ()) {
         
-        if menuView != nil {
+//        if menuView != nil {
             menuButton.target = menuView
             self.view.addGestureRecognizer(menuView.panGestureRecognizer)
-        }
+//        }
         
         completionHandler(menuButton, nil)
     }
