@@ -10,7 +10,6 @@
 		EEB14272396497520FC398D1 /* Pods_TodoModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D22016394F046755279082D /* Pods_TodoModule.framework */; };
 		F95B0BC51E9F590500E756E3 /* TodoModuleUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B0BC41E9F590500E756E3 /* TodoModuleUtilities.swift */; };
 		F95B0BC71E9F593200E756E3 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B0BC61E9F593200E756E3 /* TodoViewController.swift */; };
-		F95B0BCA1E9F595500E756E3 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B0BC91E9F595500E756E3 /* SweetAlert.swift */; };
 		F95B0BD41E9F599700E756E3 /* TodolistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B0BCD1E9F599700E756E3 /* TodolistCell.swift */; };
 		F95B0BD51E9F599700E756E3 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B0BCF1E9F599700E756E3 /* Todo.swift */; };
 		F95B0BD61E9F599700E756E3 /* Styles.css in Resources */ = {isa = PBXBuildFile; fileRef = F95B0BD01E9F599700E756E3 /* Styles.css */; };
@@ -29,7 +28,6 @@
 		8D5D1A2E7EE5D8F8EA6886FE /* Pods-TodoModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoModule/Pods-TodoModule.debug.xcconfig"; sourceTree = "<group>"; };
 		F95B0BC41E9F590500E756E3 /* TodoModuleUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModuleUtilities.swift; sourceTree = "<group>"; };
 		F95B0BC61E9F593200E756E3 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
-		F95B0BC91E9F595500E756E3 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		F95B0BCD1E9F599700E756E3 /* TodolistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodolistCell.swift; sourceTree = "<group>"; };
 		F95B0BCF1E9F599700E756E3 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		F95B0BD01E9F599700E756E3 /* Styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Styles.css; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		F95B0BC81E9F595500E756E3 /* CustomLibraries */ = {
 			isa = PBXGroup;
 			children = (
-				F95B0BC91E9F595500E756E3 /* SweetAlert.swift */,
 			);
 			path = CustomLibraries;
 			sourceTree = "<group>";
@@ -267,7 +264,6 @@
 				F95B0BD71E9F599700E756E3 /* TodoApi.swift in Sources */,
 				F9F6CAED1E02CEEC00A7DA90 /* TodoListViewController.swift in Sources */,
 				F95B0BC51E9F590500E756E3 /* TodoModuleUtilities.swift in Sources */,
-				F95B0BCA1E9F595500E756E3 /* SweetAlert.swift in Sources */,
 				F95B0BD41E9F599700E756E3 /* TodolistCell.swift in Sources */,
 				F95B0BD91E9F599700E756E3 /* TodoRemoteApi.swift in Sources */,
 				F95B0BD81E9F599700E756E3 /* TodoIdsRegistry.swift in Sources */,
