@@ -99,16 +99,16 @@ open class TodoRemoteApi  {
     }
     
     
-//    func deleteTodo(todoID : Int, completionHandler: @escaping (AnyObject?, Int, NSError?) -> ()){
-//        
+    func deleteTodo(todoID : Int, completionHandler: @escaping (AnyObject?, Int, NSError?) -> ()){
+        
 //        let todosStr : String = "todo/\(todoID)"
 //        let hostUrl : String = apiContext.getHost("todo")
 //        let connectUrl = "\(hostUrl)\(todosStr)"
 //        
 //        networkAPI.delete(connectUrl, paramsDict: [:], headers: [:], completionHandler: completionHandler)
-//        
-//        
-//    }
+        
+        
+    }
     
 
     
