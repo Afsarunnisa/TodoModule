@@ -33,6 +33,9 @@ s.source = { :git => "https://github.com/Afsarunnisa/TodoModule.git", :tag => "#
 
 # 7
 s.framework = "UIKit"
+s.dependency 'RealmSwift'
+s.dependency 'idn_sdk_ios', '~> 0.7.6'
+
 
 # 8
 s.source_files = "TodoModule/**/*.{swift}"
