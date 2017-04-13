@@ -72,11 +72,11 @@ class TodoViewController: UIViewController {
                     todosAry, messageApiModel, error in
                     
                     if(error != nil){
-                        _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
+//                        _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
                     }else if(messageApiModel?.message != ""){
-                        _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
+//                        _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
                     }else{
-                        _ = SweetAlert().showAlert("Todo", subTitle: "Todo added", style: AlertStyle.none)
+//                        _ = SweetAlert().showAlert("Todo", subTitle: "Todo added", style: AlertStyle.none)
                     }
                     
                 })
@@ -89,11 +89,11 @@ class TodoViewController: UIViewController {
                     todosAry, messageApiModel, error in
                     
                     if(error != nil){
-                        _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
+//                        _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
                     }else if(messageApiModel?.message != ""){
-                        _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
+//                        _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
                     }else{
-                        _ = SweetAlert().showAlert("Todo", subTitle: "Todo Updated", style: AlertStyle.none)
+//                        _ = SweetAlert().showAlert("Todo", subTitle: "Todo Updated", style: AlertStyle.none)
                     }
                     
                 })
