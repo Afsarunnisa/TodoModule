@@ -167,6 +167,3 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
     }
 }
-
-
-

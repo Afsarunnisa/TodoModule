@@ -19,8 +19,6 @@ class TodoViewController: UIViewController {
     var todoVal : Todo!
    
     let todoApiClass : TodoApi.Type = IDS.getModuleApi("todo") as! TodoApi.Type
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

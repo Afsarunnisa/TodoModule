@@ -18,7 +18,6 @@ public class TodoModuleUtilities {
         return alert
     }
     
-    
     public class func loadBundle() -> Bundle{
         return Bundle(for: self)
     }
