@@ -28,10 +28,7 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
         _ = IdnSDK.init(apiContext: app_context)
         
         _ = TodoIdsRegistry()
-
         super.viewDidLoad()
-        
-
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -46,9 +43,13 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
             todosAry, messageApiModel, error in
             
             if(error != nil){
-//                _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
+                
+                let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\(error.debugDescription)", actionTitle: "OK")
+                self.present(alert, animated: true, completion: nil)
+
             }else if(messageApiModel?.message != ""){
-//                _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
+                let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\(error.debugDescription)", actionTitle: "OK")
+                self.present(alert, animated: true, completion: nil)
             }else{
                 self.todosTableView.reloadData()
             }
@@ -122,9 +123,11 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
                 todosAry, messageApiModel, error in
                 
                 if(error != nil){
-//                    _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
+                    let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\(error.debugDescription)", actionTitle: "OK")
+                    self.present(alert, animated: true, completion: nil)
                 }else if(messageApiModel?.message != ""){
-//                    _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
+                    let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\(error.debugDescription)", actionTitle: "OK")
+                    self.present(alert, animated: true, completion: nil)
                 }else{
                     self.deleteRowAtIndexPath(indexPath: indexPath as NSIndexPath)
                 }

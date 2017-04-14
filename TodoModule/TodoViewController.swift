@@ -72,11 +72,17 @@ class TodoViewController: UIViewController {
                     todosAry, messageApiModel, error in
                     
                     if(error != nil){
-//                        _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
+                        let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\(error.debugDescription)", actionTitle: "OK")
+                        self.present(alert, animated: true, completion: nil)
+
                     }else if(messageApiModel?.message != ""){
-//                        _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
+                        let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\((messageApiModel?.message)!)", actionTitle: "OK")
+                        self.present(alert, animated: true, completion: nil)
+
                     }else{
-//                        _ = SweetAlert().showAlert("Todo", subTitle: "Todo added", style: AlertStyle.none)
+                        let alert = TodoModuleUtilities.alertView("Todo", alertMsg: "Todo added", actionTitle: "OK")
+                        self.present(alert, animated: true, completion: nil)
+
                     }
                     
                 })
@@ -89,20 +95,17 @@ class TodoViewController: UIViewController {
                     todosAry, messageApiModel, error in
                     
                     if(error != nil){
-//                        _ = SweetAlert().showAlert("Message", subTitle: "\(error.debugDescription)", style: AlertStyle.none)
+                        let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\(error.debugDescription)", actionTitle: "OK")
+                        self.present(alert, animated: true, completion: nil)
                     }else if(messageApiModel?.message != ""){
-//                        _ = SweetAlert().showAlert("Message", subTitle: "\((messageApiModel?.message)!)", style: AlertStyle.none)
+                        let alert = TodoModuleUtilities.alertView("Message", alertMsg: "\((messageApiModel?.message)!)", actionTitle: "OK")
+                        self.present(alert, animated: true, completion: nil)
                     }else{
-//                        _ = SweetAlert().showAlert("Todo", subTitle: "Todo Updated", style: AlertStyle.none)
+                        let alert = TodoModuleUtilities.alertView("Todo", alertMsg: "Todo Updated", actionTitle: "OK")
+                        self.present(alert, animated: true, completion: nil)
                     }
-                    
                 })
-                
             }
-
-            
         }
-
-        
     }
 }
