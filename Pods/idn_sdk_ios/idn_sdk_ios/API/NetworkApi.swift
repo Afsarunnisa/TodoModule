@@ -113,7 +113,6 @@ open class NetworkApi {
             case .failure(let error):
                 completionHandler(nil, statusCode, error as NSError?)
             }
-            
         }
     }
     
@@ -156,7 +155,6 @@ open class NetworkApi {
             case .failure(let error):
                 completionHandler(nil,statusCode, error as NSError?)
             }
-            
         }
     }
     
@@ -274,9 +272,6 @@ open class NetworkApi {
         return swiftArray
     }
 }
-
-
-
 
 
 extension UIImage {

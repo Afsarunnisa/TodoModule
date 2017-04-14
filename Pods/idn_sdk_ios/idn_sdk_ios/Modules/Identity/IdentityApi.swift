@@ -302,12 +302,10 @@ open class IdentityApi : NetworkApi {
         
     }
     
-    
     func getMessageFromDict(msgDict : JSON) -> MessagesApiModel{
         
         let messageApiModel : MessagesApiModel = MessagesApiModel()
         let errorsAry: Array<JSON> = msgDict["errors"].arrayValue
-        
         messageApiModel.message = errorsAry[0]["message"].string!
         messageApiModel.messageCode = errorsAry[0]["messageCode"].string!
         
