@@ -8,7 +8,7 @@ s.summary = "TodoModule "
 s.requires_arc = true
 
 # 2
-s.version = "0.3.6"
+s.version = "0.3.7"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -34,7 +34,7 @@ s.source = { :git => "https://github.com/Afsarunnisa/TodoModule.git", :tag => "#
 # 7
 s.framework = "UIKit"
 s.dependency 'RealmSwift'
-s.dependency 'idn_sdk_ios', '~> 0.7.6'
+s.dependency 'idn_sdk_ios', '~> 0.8.1'
 
 
 # 8

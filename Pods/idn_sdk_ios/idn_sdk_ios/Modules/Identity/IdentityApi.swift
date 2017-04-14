@@ -297,9 +297,7 @@ open class IdentityApi : NetworkApi {
             }else {
                 messageApiModel = MessagesApiModel(json: swiftyJsonVar)
             }
-            
             responseHandler(modulesArray, messageApiModel, error)
-            
         })
         
     }
