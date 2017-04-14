@@ -17,7 +17,6 @@ class TodoViewController: UIViewController {
 
     var updateTodo : Bool = false
     var todoVal : Todo!
-   
     let todoApiClass : TodoApi.Type = IDS.getModuleApi("todo") as! TodoApi.Type
     
     override func viewDidLoad() {
@@ -37,7 +36,6 @@ class TodoViewController: UIViewController {
             descTextView.text = todoVal.todoDesc
         }
     }
-    
     
     @IBAction func saveBtnClicked(_ sender: Any) {
         
