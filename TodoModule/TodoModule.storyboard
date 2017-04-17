@@ -76,6 +76,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="LcO-Yh-R11">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="W7R-NP-TvR"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Gwf-nv-dwV">
                             <connections>
                                 <action selector="addTodo:" destination="BYZ-38-t0r" id="Kd5-Ne-qtZ"/>
@@ -83,6 +84,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="menuButton" destination="W7R-NP-TvR" id="DJ4-ue-Tm9"/>
                         <outlet property="todosTableView" destination="upo-Bb-pDo" id="iRb-4A-o6b"/>
                         <segue destination="4ot-FH-q9L" kind="show" identifier="listToDetails" id="MOd-Ut-jPJ"/>
                     </connections>
@@ -172,7 +174,7 @@
         <!--Navigation Controller-->
         <scene sceneID="7rv-Np-YRS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tTY-UU-Jkp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="initialController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tTY-UU-Jkp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Svp-mZ-CKZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

@@ -8,7 +8,7 @@ source 'https://github.com/CocoaPods/Specs.git'
   use_frameworks!
 
     pod 'RealmSwift'
-    pod 'idn_sdk_ios', '~> 0.8.3'
+    pod 'idn_sdk_ios', '~> 0.8.4'
 
 
   # Pods for TodoModule

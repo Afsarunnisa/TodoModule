@@ -16,6 +16,7 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
 
     
     @IBOutlet weak var todosTableView: UITableView!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
 
     let searchController = UISearchController(searchResultsController: nil)
     var todos : Array<Any>! = []
@@ -54,6 +55,17 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
                 self.todosTableView.reloadData()
             }
         })
+    }
+    
+    
+    public func menuAction(imgName: String, menuView : AnyObject, completionHandler: @escaping (UIBarButtonItem?, NSError?) -> ()) {
+        
+        //        if menuView != nil {
+        menuButton.target = menuView
+        self.view.addGestureRecognizer(menuView.panGestureRecognizer)
+        //        }
+        
+        completionHandler(menuButton, nil)
     }
 
     override func didReceiveMemoryWarning() {

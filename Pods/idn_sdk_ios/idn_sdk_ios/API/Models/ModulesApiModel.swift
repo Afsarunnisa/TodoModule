@@ -64,21 +64,21 @@ import SwiftyJSON
         authorities = json["authorities"].exists() ? json["authorities"].array! : []
         scopes = json["scopes"].exists() ? json["scopes"].array! : []
         
-        moduleImages = json["moduleImages"].exists() ? json["moduleImages"].array! : []
-        
-        
-        apiDefinitionUrl = json["apiDefinitionUrl"].exists() ? json["apiDefinitionUrl"].string! : ""
-        uiLibraryUrl = json["uiLibraryUrl"].exists() ? json["uiLibraryUrl"].string! : ""
-        docUrl = json["docUrl"].exists() ? json["docUrl"].string! : ""
-        
-        
-        logoImage = json["logoImage"].exists() ? json["logoImage"].array! : []
-        
-        tags = json["tags"].exists() ? json["tags"].string! : ""
+//        moduleImages = json["moduleImages"].exists() ? json["moduleImages"].array! : []
+//        
+//        
+//        apiDefinitionUrl = json["apiDefinitionUrl"].exists() ? json["apiDefinitionUrl"].string! : ""
+//        uiLibraryUrl = json["uiLibraryUrl"].exists() ? json["uiLibraryUrl"].string! : ""
+//        docUrl = json["docUrl"].exists() ? json["docUrl"].string! : ""
+//        
+//        
+//        logoImage = json["logoImage"].exists() ? json["logoImage"].array! : []
+//        
+//        tags = json["tags"].exists() ? json["tags"].string! : ""
         moduleDescription = json["description"].exists() ? json["description"].string! : ""
         
         
-        apiClients = json["apiClients"].exists() ? json["apiClients"].array! : []
+//        apiClients = json["apiClients"].exists() ? json["apiClients"].array! : []
         
         
         
