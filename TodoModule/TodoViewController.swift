@@ -14,6 +14,7 @@ class TodoViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descTextView: UITextView!
+    @IBOutlet weak var addButton: UIButton!
 
     var updateTodo : Bool = false
     var todoVal : Todo!
@@ -29,11 +30,15 @@ class TodoViewController: UIViewController {
         
         if(updateTodo == false){
             self.title = "Add Todo"
+            addButton.setTitle("Add", for: UIControlState.normal)
         }else{
             self.title = "Update Todo"
             
             titleTextField.text = todoVal.title
             descTextView.text = todoVal.todoDesc
+          
+            addButton.setTitle("Update", for: UIControlState.normal)
+
         }
     }
     

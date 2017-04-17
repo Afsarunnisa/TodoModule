@@ -113,29 +113,29 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Clo-VG-P9R"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pgh-KI-dKa">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pgh-KI-dKa">
                                         <rect key="frame" x="0.0" y="44" width="336" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="a5i-j9-kkw"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEv-Pq-DSV">
                                         <rect key="frame" x="0.0" y="88" width="336" height="12"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cX7-AU-lmg">
                                         <rect key="frame" x="0.0" y="104" width="336" height="399"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJU-hJ-uS1">
@@ -143,7 +143,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="vln-HV-aGQ"/>
                                         </constraints>
-                                        <state key="normal" title="Add"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <connections>
                                             <action selector="saveBtnClicked:" destination="4ot-FH-q9L" eventType="touchUpInside" id="CUQ-7u-dCl"/>
                                         </connections>
@@ -163,6 +163,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="nJU-hJ-uS1" id="ecq-1Q-MPE"/>
                         <outlet property="descTextView" destination="cX7-AU-lmg" id="eXk-Pc-rLw"/>
                         <outlet property="titleTextField" destination="pgh-KI-dKa" id="JlB-Pm-Elg"/>
                     </connections>
