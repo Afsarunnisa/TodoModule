@@ -31,6 +31,11 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
         _ = TodoIdsRegistry()
         super.viewDidLoad()
         
+        
+        var recognizer = UISwipeGestureRecognizer(target: self, action: "didSwipe")
+        self.todosTableView.addGestureRecognizer(recognizer)
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -55,6 +60,18 @@ class TodoListViewController: UIViewController,UITableViewDelegate,UITableViewDa
                 self.todosTableView.reloadData()
             }
         })
+    }
+    
+    
+    func didSwipe(recognizer: UIGestureRecognizer) {
+        if recognizer.state == UIGestureRecognizerState.Ended {
+            let swipeLocation = recognizer.locationInView(self.tableView)
+            if let swipedIndexPath = tableView.indexPathForRowAtPoint(swipeLocation) {
+                if let swipedCell = self.tableView.cellForRowAtIndexPath(swipedIndexPath) {
+                    // Swipe happened. Do stuff!
+                }
+            }
+        }
     }
     
     

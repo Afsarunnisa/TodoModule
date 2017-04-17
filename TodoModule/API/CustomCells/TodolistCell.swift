@@ -14,7 +14,8 @@ class TodolistCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
-    
+    @IBOutlet weak var deleteBtn: UIButton!
+
     
     public func bind(todo : Todo) -> Self {
 
